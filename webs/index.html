@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSpy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="header">
+        <div>
+            <a href="" id="logo">
+                <p>iSpy</p>
+            </a>
+        </div>
+        <div class="options">
+            <a href="#home">Home</a>
+        </div>
+        <div class="options">
+            <a href="#option">About Us</a>
+            </div>
+        <div class="options">
+        <a href="#Contact">Contact Us</a>
+        </div>
+        <div class="options">
+            <button id='login'>Login/Sign Up</button>
+        </div>
+    </nav>
+
+    <section id="home">
+        <!-- banner -->
+        <img src="imgs/TidyAlertLeopardseal-max-1mb.gif" alt="" srcset="">
+        <h2 class="mess"><span style="color: white;" class="mess-rec">Welcome to iSpy</span></h2>
+    </section>
+    <section id="option">
+        <div class="optionOne">
+            <div class="cardImage">
+                <img src="imgs/cyber-security-icon-clipart-8.jpg" alt="" srcset="">            
+            </div>
+            <div class="cardBody">  
+                <p>Lock your devices to semi protact yourself...</p>
+                <button class="btn-read">read more...</button>
+            </div>
+            
+        </div>
+        <div class="optionTwo">
+            <div class="cardImage">
+                <img src="imgs/CYBER-RISK-custom-general.jpg" alt="" srcset="">            
+            </div>   
+            <div class="cardBody">  
+                <p>The risk see risk everyday look carefully...</p>
+                <button class="btn-read">read more...</button>
+            </div>        
+        </div>
+        <div class="optionThree">
+            <div class="cardImage">
+                <img src="imgs/OIP.jfif" alt="" srcset="">            
+            </div> 
+            <div class="cardBody">  
+                <p>Emails are not safe for anyone</p>
+                <button class="btn-read">read more...</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Contact">
+        <h2 style="text-align: center;">Get in touch with us:</h2>
+
+        <form action="#" method="post">
+            <label for="">Enter Email: </label>
+            <input type="email" name="" id="hackEm">
+            <input type="button" value="gone" id="gonebtn" onclick="check()">
+        </form>
+    </section>
+    <footer style="text-align: center; color: aliceblue; background: #000;width: 100%;">
+        &copy;<NAME>, 2021 | All rights reserved
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        var img = document.querySelector(".mess-rec");
+
+        var text = ['where we hack','Today is not safe','We look forward to your information']
+            function wordChage(){
+                let i=0;
+                text.forEach(x => img.innerHTML=x);
+            }
+            setInterval(wordChage,1000);
+
+
+    </script>
+</body>
+    
+</html>

@@ -1,0 +1,172 @@
+*{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: gray;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    border: 1px solid transparent;
+    padding: 2px 3px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: white;
+    position: sticky;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.header #logo{
+    font-size: 35px;
+    color: black;
+    font-style: italic;
+}
+.header .options{
+    width: fit-content;
+    height: auto;   
+    position: relative;
+    margin: auto;
+    transform: translate(9%, 5%);
+}
+.header .options a{
+    color: black;
+}
+.header .options a:hover{
+    transition:.4s ease all ;
+    display: block;
+    width: fit-content;
+    border: 1px solid transparent;
+    padding: 2px;
+    box-shadow: 5px 6px 2px black;
+    font-size: 23px;
+}
+.header .options button{
+    float: right;
+    outline:none;
+    border: none;
+    background-color:#f8c7ab;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#home{
+    text-align: center;
+    width: 100%;
+    border: 1px solid transparent;
+}
+#home img{
+    width: 100%;
+    height: 60vh;
+    animation: hacker 5s linear 5s infinite forwards ;
+}
+#home .mess{
+    margin-top: -100px;
+}
+
+@keyframes hacker {
+    20%{
+        content: url('imgs/china-russia.gif');
+    }
+    40%{
+        content: url('imgs/pirate_flag_with_sword.gif');
+
+    }
+    70%{
+        content: url('imgs/pwl9mwg0qu5vdagwstde.gif');
+
+    }
+    100%{
+        content: url('imgs/china-russia.gif');
+    }
+}
+#option{
+    display: flex;
+    width: 100%;
+    background: lightsteelblue;
+    justify-content: space-around;
+    cursor: pointer;
+}
+#option .cardImage {
+    width: fit-content;
+    position: relative;
+    margin-top: 150px;
+}
+#option .cardImage img{
+    width: 250px;
+    height: 200px;
+}
+#option .cardImage img:hover{
+    width: 250px;
+    height: 250px;
+    transition:.3s ease all;
+    border-radius: 50%;
+}
+#option .optionOne,.optionTwo,.optionThree{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    border: 1px solid white;
+    align-items: center;
+    margin-top: 75px;
+    border-radius: 15px;
+    cursor: pointer;
+    gap: 10px;
+    background: white;
+}
+#option .cardBody button{
+    padding: 8px 16px ;
+    font-size: large;
+    border: none;
+    border-radius: 15px;
+    background-color: lightpink;
+    color: white;
+}
+#option .cardBody button:hover{
+    background-color: lightyellow;
+    transition: .4s ease-in;
+    color: black;
+}
+/*****Contact section******/
+#Contact{
+    width: 100%;
+    background-color: white;
+}
+#Contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Contact form input[type="email"]{
+    width: 590px;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: .5;
+}
+#Contact form label{
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 800;
+}
+#Contact form input[type="submit"]{
+    width: 100px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+   border-left-style: none;
+}
+#Contact form input[type="submit"]:hover{
+    background-color: limegreen;
+    font-size: larger;
+}
